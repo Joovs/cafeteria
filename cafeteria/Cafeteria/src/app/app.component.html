@@ -15,16 +15,28 @@
     text-decoration: none;
     float: left;
     margin-left: 15px;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+  }
+
+  .encab{
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
   }
 
 
 </style>
 <nav class="nav">
-  <h1>Cafeteria</h1>
+  <h1 class="encab">Cafeteria</h1>
   <ul>
-    <li>HOME</li>
-    <li>CAFETERIA</li>
-    <li>NOSOTROS</li>
-    <li>LOGIN</li>
+    <li><a href="" >HOME</a></li>
+    <li><a href="/focos" >CAFETERIA</a></li>    <!--En la parte del menu de la cafeteria trabajará co el component "focos"-->
+    <li><a href="/nosotros" >NOSOTROS</a></li>
+    <li><a href="/login" >LOGIN</a></li>
   </ul>
+</nav>
+
+<nav class="contenido">
+  <router-outlet></router-outlet>
 </nav>
