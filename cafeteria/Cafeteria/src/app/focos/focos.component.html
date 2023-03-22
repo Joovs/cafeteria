@@ -1,1 +1,96 @@
-<p>focos works!</p>
+
+<style>
+    body{
+        /*background-image: url(https://www.pinterest.com/pin/53409945562447620/);*/
+        
+        
+        background: linear-gradient(#e9b76dd3, pink);
+    }
+
+
+    .tabla{
+        border-spacing: 10px;
+        table-layout: fixed;
+        float: center;
+        margin-left: 40%;
+    }    
+
+    
+
+    .con{
+        width: 40%;
+        text-align: right;
+    }
+
+    .con2{
+        /*background-image: url(https://www.pinterest.com/pin/53409945562447620/);*/
+        width: 40%;
+        
+    }
+
+    .con div{
+        align-content: center;
+    }
+    .uno{
+        
+	background: linear-gradient(#e9b76d00, rgba(255, 192, 203, 0));
+    }
+    .boton{
+        width: 80px;
+    }
+
+    .boton:hover{
+        background-color: chocolate;
+    }
+
+    
+
+</style>
+<body>
+
+    <div class="uno">
+        <div class="con">
+            <table class="tabla">
+                <tbody>
+                    <tr>
+                        <th><h3>Sensores</h3></th>
+                        <th><h3>Modificación</h3></th>
+                    </tr>
+                    <tr>
+                        <td><h4>Focos</h4></td>
+                        <td><input class="boton" type="button" value="on/off"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Ventiladores</h4></td>
+                        <td><input class="boton" type="button" value="on/off"></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Puertas</h4></td>
+                        <td><input class="boton" type="button" value="on/off"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+
+
+        <div class="con2">
+            <app-foco></app-foco>
+        </div>
+    </div>
+    <p>--------------------------------------------------------------</p>   
+    <div class="dos">
+        
+        <div class="con2">
+            <app-ventilador></app-ventilador>
+        </div>
+    </div>
+    <p>--------------------------------------------------------------</p>   
+    <div class="dos">
+        
+        <div class="con2">
+            <app-puerta></app-puerta>
+        </div>
+    </div>
+</body>

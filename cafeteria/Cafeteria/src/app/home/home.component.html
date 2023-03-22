@@ -1,1 +1,105 @@
-<p>home works!</p>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carousel / Slider con Glider.js</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	
+</head>
+<body>
+	<div class="contenedor">
+		<main class="contenido-principal">
+			<img [src] ="img2" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
+			<div class="contenido-principal__contenedor">
+				<h1 class="contenido-principal__titulo"><b>Cafeteria IoT</b></h1>
+				<div class="contenido-principal__resumen">
+				<h3>Objetivo:</h3><h1>Implementar tecnología de quinta generación, específicamente de tecnología IoT a una cafetería, para poder controlar y monitorear todas las funciones mediante una aplicación móvil. </h1>
+				</div>
+			</div>
+		</main>
+
+		<div class="carousel">
+			<div class="carousel__contenedor">
+				<button aria-label="Anterior" class="carousel__anterior">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+
+				<div class="carousel__lista">
+					<div class="carousel__elemento">
+						<img [src] ="img1" alt="Rock and Roll Hall of Fame">
+					</div>
+					<div class="carousel__elemento">
+						<img [src] ="img3" alt="Constitution Square - Tower I">
+					</div>
+			
+					<div class="carousel__elemento">
+						<img [src] ="img4" alt="Harmony Tower">
+					</div>
+	
+					<div class="carousel__elemento">
+						<img [src] ="img5" alt="Empire State Building">
+					</div>
+					<div class="carousel__elemento">
+						<img [src] ="img6" alt="Harmony Tower">
+					</div>
+					<div class="carousel__elemento">
+						<img [src] ="img7" alt="Empire State Building">
+					</div>
+					<div class="carousel__elemento">
+						<img [src] ="img8" alt="Harmony Tower">
+					</div>
+				</div>
+
+				<button aria-label="Siguiente" class="carousel__siguiente">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+			
+			<div role="tablist" class="carousel__indicadores"></div>
+		</div>
+		
+		<h3>Objetivo especifico:</h3>
+		<p>Mediante sensores buscamos implementar un establecimiento mas capaz, para evitar 
+			las largas esperas, desarrollar una aplicación para mejorar una cafetería, así como:</p>
+		<ul>
+			<li>Luz</li>
+			<li>Temperatura</li>
+			<li>Humedad </li>
+			<li>Puertas (proximidad)</li>
+		</ul>
+		<p>Con estos sensores la luz será reducida, se prenderán si es que la iluminación exterior 
+		disminuye, temperatura, esta hará un lugar mas confortable regulando con ventiladores la 
+		temperatura del ambiente, humedad, se implementara en un área verde lo cual ara que las plantas 
+		no mueran por descuidos, puertas, cada ves que una persona este a cierta distancia estas se abrirán 
+		solas, sin necesidad de empujarlas.</p>
+
+		<h3>Justificación:</h3>
+		<p>Hemos notado que en la cafetería hace falta mas dinamismo, ya que las personas suelen tomar
+		mas tiempo en cosas sencillas, con nuestra app buscamos hacer más optimo dicho establecimiento.</p>
+
+		<h3>Impactos:</h3>
+		<p><b>Económico</b>, con los sensores de luz se ahorrará dinero, ya que estos tendrán su tiempo para 
+		ser activado, evitando que estos estén siempre encendidos.</p>
+
+		<p><b>Ambiental</b>, cuenta con áreas verdes las cuales contendrán un sensor de humedad evitando que 
+		estas mueran por descuidos, cada sensor tiene su tiempo así evitando el desgasto innecesario de 
+		energía.</p>
+
+		<p><b>Social</b>, las personas serán mejor atendidas, ya que cada empleado se tendrá que preocupar solo 
+		por la satisfacción del cliente, además de un espacio amplio y adecuando.</p>
+
+		<p><b>Tecnológico</b>, una persona o encargado podrá controlar los sensores para mejorar el ambiente tanto 
+			laborar como para los clientes, también el encargado de la app estará asegurado por medio de una 
+			cuenta con una contraseña única, ya sea cuenta de g-mail o alguna otra.</p>
+	</div>
+	
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
+    
+</body>
+</html>

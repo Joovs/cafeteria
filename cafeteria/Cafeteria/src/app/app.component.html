@@ -3,12 +3,19 @@
     background-color: rgb(210, 138, 50);
     
     text-align: center;
+    border-top: 1px solid #ffb300;
+    border-bottom: 1px solid #ffb300;
+    border-left: 1px solid #ffb300;
+    border-right: 1px solid #ffb300;
+    text-decoration: none;
+  
     
   }
    ul{
     list-style: none;
     overflow: hidden;
     margin-top: 15px;
+    text-decoration: none;
   }
   ul li{
     display: block;
@@ -18,18 +25,29 @@
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
+    text-decoration: none;
   }
 
   .encab{
     font-size: 60px;
     font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px snow;
+  }
+  .nav ul li a{
+    text-decoration: none;
+    color: black;
+    
   }
 
-
+  .nav ul li a:hover{
+    text-decoration: none;
+    color: black;
+    color: blue;
+  }
 </style>
 <nav class="nav">
   <h1 class="encab">Cafeteria</h1>
-  <ul>
+  <ul class="navv">
     <li><a href="" >HOME</a></li>
     <li><a href="/focos" >CAFETERIA</a></li>    <!--En la parte del menu de la cafeteria trabajará co el component "focos"-->
     <li><a href="/nosotros" >NOSOTROS</a></li>

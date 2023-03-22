@@ -1,0 +1,69 @@
+<style>
+    *{
+        
+	background-color: rgba(240, 248, 255, 0);
+    }
+</style>
+
+<div class="foco">
+
+    <table>
+        <thead>LISTA DE FOCOS DIAPONIBLES
+            <tr>
+                <th>NUMERO</th>
+                <th>TIPO</th>
+                <th>WATTS</th>
+                <th>HABITACION</th>
+                <th>ESTATUS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let foco of Focos">
+                <td>{{ foco.numFoco }}</td>
+                <td>{{ foco.tipo }}</td>
+                <td>{{ foco.watts }}</td>
+                <td>{{ foco.habitacion }}</td>
+                <td>{{ foco.status }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <!------------------------>
+    <table>
+        <thead>FOCOS ACTIVOS
+            <tr>
+                <th>NUMERO</th>
+                <th>TIPO</th>
+                <th>WATTS</th>
+                <th>HABITACION</th>
+                <th>ESTATUS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let foco of focosActivos">
+                <td>{{ foco.numFoco }}</td>
+                <td>{{ foco.tipo }}</td>
+                <td>{{ foco.watts }}</td>
+                <td>{{ foco.habitacion }}</td>
+                <td>{{ foco.status }}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    <p *ngIf="focosActivos.length">Hay {{ focosActivos.length }} focos activos</p>
+    
+    <div [ngSwitch]="switchValue">
+        <ng-template ngSwitchCase="empty">¡Todos los focos están apagados!</ng-template>
+        <ng-template ngSwitchCase="one">Hay un foco prendido</ng-template>
+        <ng-template ngSwitchDefault>Hay {{ productCount }} 
+            <ng-container [ngPlural]="productCount">
+                <ng-template ngPluralCase="=0">focos</ng-template>
+                <ng-template ngPluralCase="=1">foco</ng-template>
+                <ng-template ngPluralCase="other">focos</ng-template>
+            </ng-container>
+             prendidos
+        </ng-template>
+    
+    </div>
+
+</div>
