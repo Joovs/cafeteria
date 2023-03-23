@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class FocosComponent {
 
+
+
+
+  foco = false;
+  vent = false;
+  puerta=false;
+
+  cambiarEstadoFoco() {
+    this.foco = !this.foco
+  }
+
+  cambiarEstadoV() {
+    this.vent = !this.vent
+  }
+
+  cambiarEstadoP() {
+    this.puerta = !this.puerta
+  }
+
 }

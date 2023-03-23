@@ -1,1 +1,62 @@
-<p>ventilador works!</p>
+
+<div class="vent">
+
+    <table>
+        <thead>LISTA DE VENTILADORES DISPONIBLES
+            <tr>
+                <th>NÚMERO</th>
+                <th>COLOR</th>
+                <th>WATTS</th>
+                <th>ÁREA</th>
+                <th>ESTATUS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ventilador of Vents">
+                <td>{{ ventilador.numV }}</td>
+                <td>{{ ventilador.color }}</td>
+                <td>{{ ventilador.watts }}</td>
+                <td>{{ ventilador.area }}</td>
+                <td>{{ ventilador.status }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <!------------------------>
+    <table>
+        <thead>VENTILADORES ACTIVOS
+            <tr>
+                <th>NUMERO</th>
+                <th>COLOR</th>
+                <th>WATTS</th>
+                <th>AREA</th>
+                <th>ESTATUS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let vent of ventsActivos">
+                <td>{{ vent.numV }}</td>
+                <td>{{ vent.color }}</td>
+                <td>{{ vent.watts }}</td>
+                <td>{{ vent.area }}</td>
+                <td>{{ vent.status }}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    
+    <div [ngSwitch]="switchValue">
+        <ng-template ngSwitchCase="empty">¡Todos los ventiladores están apagados!</ng-template>
+        <ng-template ngSwitchCase="one">Hay un ventilador prendido</ng-template>
+        <ng-template ngSwitchDefault>Hay {{ productCount }} 
+            <ng-container [ngPlural]="productCount">
+                <ng-template ngPluralCase="=0">ventiladores</ng-template>
+                <ng-template ngPluralCase="=1">ventilador</ng-template>
+                <ng-template ngPluralCase="other">ventiladores</ng-template>
+            </ng-container>
+             prendidos
+        </ng-template>
+    
+    </div>
+
+</div>

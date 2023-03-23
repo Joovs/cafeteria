@@ -8,9 +8,9 @@
 <div class="foco">
 
     <table>
-        <thead>LISTA DE FOCOS DIAPONIBLES
+        <thead>LISTA DE FOCOS DISPONIBLES
             <tr>
-                <th>NUMERO</th>
+                <th>NÚMERO</th>
                 <th>TIPO</th>
                 <th>WATTS</th>
                 <th>HABITACION</th>
@@ -50,7 +50,6 @@
     </table>
     
     
-    <p *ngIf="focosActivos.length">Hay {{ focosActivos.length }} focos activos</p>
     
     <div [ngSwitch]="switchValue">
         <ng-template ngSwitchCase="empty">¡Todos los focos están apagados!</ng-template>

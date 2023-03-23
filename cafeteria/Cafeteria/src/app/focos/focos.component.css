@@ -1,0 +1,129 @@
+
+/*body{
+    /*background-image: url(https://www.pinterest.com/pin/53409945562447620/);
+    
+    
+    background: linear-gradient(#e9b76dd3, pink);
+}*/
+
+* {
+box-sizing: border-box;
+}
+
+body {
+background: linear-gradient(#e9b76dd3, pink);
+color: #000000;
+font-family: 'Montserrat', sans-serif;
+min-height: 100vh;
+display: flex;
+align-items: center;
+}
+
+.contenedor {
+max-width: 1200px;
+width: 90%;
+margin: auto;
+}
+
+
+
+
+.con{
+    width: 40%;
+    text-align: right;
+}
+
+.con2{
+    /*background-image: url(https://www.pinterest.com/pin/53409945562447620/);*/
+    width: 40%;
+    
+}
+
+.con div{
+    align-content: center;
+}
+.con table{
+    
+    float: center center;
+}
+.uno{
+    
+background: linear-gradient(#e9b76d00, rgba(255, 192, 203, 0));
+}
+.boton{
+    width: 80px;
+}
+
+.boton:hover{
+    background-color: chocolate;
+}
+
+.estado img{
+    height: 200px;
+    width: auto;
+    
+}
+.estado{
+    align-content: center;
+    
+}
+.tabla{
+    width: 80%;
+    margin-left: 12%;
+}
+
+.tabla td{
+    text-align: center;
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 550px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: chocolate;
+}
+
+.plano table{
+    border: 1px solid #000;
+}
+.plano td{
+    border: 1px solid #000;
+    height: 200px;
+    width: 200px;
+}
+
+.c11 td{
+    border-bottom: 10px solid #000;
+}
+.c12 {
+    border-bottom: 10px solid #000;
+    border-right: 10px solid #000;
+    
+}
+.c14{
+    border-right: 10px solid #000;
+
+}

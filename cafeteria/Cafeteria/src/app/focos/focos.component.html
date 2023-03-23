@@ -1,96 +1,310 @@
-
-<style>
-    body{
-        /*background-image: url(https://www.pinterest.com/pin/53409945562447620/);*/
-        
-        
-        background: linear-gradient(#e9b76dd3, pink);
-    }
-
-
-    .tabla{
-        border-spacing: 10px;
-        table-layout: fixed;
-        float: center;
-        margin-left: 40%;
-    }    
-
-    
-
-    .con{
-        width: 40%;
-        text-align: right;
-    }
-
-    .con2{
-        /*background-image: url(https://www.pinterest.com/pin/53409945562447620/);*/
-        width: 40%;
-        
-    }
-
-    .con div{
-        align-content: center;
-    }
-    .uno{
-        
-	background: linear-gradient(#e9b76d00, rgba(255, 192, 203, 0));
-    }
-    .boton{
-        width: 80px;
-    }
-
-    .boton:hover{
-        background-color: chocolate;
-    }
-
-    
-
-</style>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carousel / Slider con Glider.js</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	
+</head>
 <body>
+    
+		
 
-    <div class="uno">
-        <div class="con">
-            <table class="tabla">
-                <tbody>
-                    <tr>
-                        <th><h3>Sensores</h3></th>
-                        <th><h3>Modificación</h3></th>
-                    </tr>
-                    <tr>
-                        <td><h4>Focos</h4></td>
-                        <td><input class="boton" type="button" value="on/off"></td>
-                    </tr>
-                    <tr>
-                        <td><h4>Ventiladores</h4></td>
-                        <td><input class="boton" type="button" value="on/off"></td>
-                    </tr>
-                    <tr>
-                        <td><h4>Puertas</h4></td>
-                        <td><input class="boton" type="button" value="on/off"></td>
-                    </tr>
-                </tbody>
+    <div>
+
+        
+        <!-----------------------------------UNO----------------------------------------------->
+        <main class="contenido-principal">
+			<div class="contenido-principal__contenedor">
+				<h1 class="contenido-principal__titulo"><b>Manejo de la cafetería</b></h1>
+				<div class="contenido-principal__resumen">
+				<h1>En ésta parte de la página, puedes ver y modificar el estado de los sensores y/o dispositivos conectados a la 
+                    cafetería, además de que también cuentas con un contador de cuántos dispositivos están encendidos al momento.</h1>
+				</div>
+			</div>
+		</main>
+
+        <div class="tabla">
+            <div class="tabla">
+                <table class="tabla">
+                    <tbody>
+                        <tr>
+                            <th><h3>Sensores</h3></th>
+                            <th><h3>Modificación</h3></th>
+                            <th><h3>Estado</h3></th>
+                        </tr>
+                        <tr>
+                            <td><h4>Focos</h4></td>
+                            <td><input class="boton" type="button" value="on/off" (click)="cambiarEstadoFoco()"></td>
+                            <td class="estado">
+                                <img *ngIf="foco" src="../../assets\FDespierto.png" (click)="cambiarEstadoFoco()">
+                                <img *ngIf="!foco" src="../../assets\Fdormido.png" (click)="cambiarEstadoFoco()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4>Ventiladores</h4></td>
+                            <td><input class="boton" type="button" value="on/off" (click)="cambiarEstadoV()"></td>
+                            <td class="estado">
+                                <img *ngIf="vent" src="../../assets\VDespierto.png" (click)="cambiarEstadoV()">
+                                <img *ngIf="!vent" src="../../assets\VDormido.png" (click)="cambiarEstadoV()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4>Puertas</h4></td>
+                            <td><input class="boton" type="button" value="on/off" (click)="cambiarEstadoP()"></td>
+                            <td class="estado">
+                                <img *ngIf="puerta" src="../../assets\PDespierta.png" (click)="cambiarEstadoP()">
+                                <img *ngIf="!puerta" src="../../assets\PDormida.png" (click)="cambiarEstadoP()">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            
+    
+    
+            
+        </div>
+        
+        <!-----------------------------------DOS----------------------------------------------->
+
+        <div class="dos">
+            <table>
+                <tr>
+                    <td>
+
+                        <div class="con2">
+                            <!--<app-foco></app-foco>-->
+                            <app-foco></app-foco>
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="con2">
+                            <!--<app-ventilador></app-ventilador>-->
+                            <app-ventilador></app-ventilador>
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="con2">
+                            <!--<app-puerta></app-puerta>-->
+                            <app-puerta></app-puerta>
+                        </div>
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
             </table>
+
         </div>
+        <!-----------------------------------TRES----------------------------------------------->
+        <div class="plano">
+            <br>
+            <br>
+            <br>
+            <h2>Planos del primer piso</h2>
+            <!-----1------->
+            <table class="plano">
+                <tr>
+                    <div class="c11">
+                        <td>
+                            <p>foco1</p>
+                        </td>
+                    </div>
+                    
 
-        
 
 
-        <div class="con2">
-            <app-foco></app-foco>
+                    <td class="c12">
+                        <p>jolakjfd</p>
+                    </td>
+
+
+
+                    <td class="c13">
+                        
+                    </td>
+
+
+
+                    <td class="c14">
+                        
+                    </td>
+
+
+
+                    <td class="c15">
+                        <p>puerta1</p>
+                    </td>
+
+
+
+                    <td class="c16">
+                        
+                    </td>
+                </tr>
+                <!-----2------->
+                <tr>
+                    <td>
+
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+
+
+
+                    <td>
+                        <p>foco2</p>
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+
+
+                    
+                    <td>
+                        
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+                </tr>
+                <!-----3------->
+                <tr>
+                    <td>
+
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+
+
+                    
+                    <td>
+                        
+                    </td>
+
+
+
+                    <td>
+                        <p>ventilador1</p>
+                    </td>
+                </tr>
+                <!-----4------->
+                <tr>
+                    <td>
+
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+
+
+
+                    <td>
+                        <p>foco3</p>
+                    </td>
+
+
+
+                    <td>
+                        <p>foco4</p>
+                    </td>
+
+
+                    
+                    <td>
+                        <p>foco5</p>
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+                </tr>
+                <!-----5------->
+                <tr>
+                    <td>
+
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+
+
+
+                    <td>
+                        <p>puerta2</p>
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+
+
+                    
+                    <td>
+                        
+                    </td>
+
+
+
+                    <td>
+                        
+                    </td>
+                </tr>
+
+
+            </table>
+
+
         </div>
     </div>
-    <p>--------------------------------------------------------------</p>   
-    <div class="dos">
-        
-        <div class="con2">
-            <app-ventilador></app-ventilador>
-        </div>
-    </div>
-    <p>--------------------------------------------------------------</p>   
-    <div class="dos">
-        
-        <div class="con2">
-            <app-puerta></app-puerta>
-        </div>
-    </div>
+
+
+		
+	
+	
+
+    
 </body>
+</html>
