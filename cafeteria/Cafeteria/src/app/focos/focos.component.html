@@ -32,20 +32,30 @@
                     <tbody>
                         <tr>
                             <th><h3>Sensores</h3></th>
-                            <th><h3>Modificación</h3></th>
-                            <th><h3>Estado</h3></th>
+                            <th><h3></h3></th>
+                            <th><h3></h3></th>
                         </tr>
                         <tr>
                             <td><h4>Focos</h4></td>
-                            <td><input class="boton" type="button" value="on/off" (click)="cambiarEstadoFoco()"></td>
                             <td class="estado">
-                                <img *ngIf="foco" src="../../assets\FDespierto.png" (click)="cambiarEstadoFoco()">
-                                <img *ngIf="!foco" src="../../assets\Fdormido.png" (click)="cambiarEstadoFoco()">
+                                <img *ngIf="foco1" src="../../assets\FDespierto.png" (click)="cambiarEstadoFoco()">
+                                <img *ngIf="!foco1" src="../../assets\Fdormido.png" (click)="cambiarEstadoFoco()">
+                            </td>
+                            <td class="estado">
+                                <img *ngIf="foco2" src="../../assets\FDespierto.png" (click)="cambiarEstadoFoco2()">
+                                <img *ngIf="!foco2" src="../../assets\Fdormido.png" (click)="cambiarEstadoFoco2()">
+                            </td>
+                            <td class="estado">
+                                <img *ngIf="foco3" src="../../assets\FDespierto.png" (click)="cambiarEstadoFoco3()">
+                                <img *ngIf="!foco3" src="../../assets\Fdormido.png" (click)="cambiarEstadoFoco3()">
+                            </td>
+                            <td class="estado">
+                                <img *ngIf="foco4" src="../../assets\FDespierto.png" (click)="cambiarEstadoFoco4()">
+                                <img *ngIf="!foco4" src="../../assets\Fdormido.png" (click)="cambiarEstadoFoco4()">
                             </td>
                         </tr>
                         <tr>
                             <td><h4>Ventiladores</h4></td>
-                            <td><input class="boton" type="button" value="on/off" (click)="cambiarEstadoV()"></td>
                             <td class="estado">
                                 <img *ngIf="vent" src="../../assets\VDespierto.png" (click)="cambiarEstadoV()">
                                 <img *ngIf="!vent" src="../../assets\VDormido.png" (click)="cambiarEstadoV()">
@@ -53,10 +63,13 @@
                         </tr>
                         <tr>
                             <td><h4>Puertas</h4></td>
-                            <td><input class="boton" type="button" value="on/off" (click)="cambiarEstadoP()"></td>
                             <td class="estado">
                                 <img *ngIf="puerta" src="../../assets\PDespierta.png" (click)="cambiarEstadoP()">
                                 <img *ngIf="!puerta" src="../../assets\PDormida.png" (click)="cambiarEstadoP()">
+                            </td>
+                            <td class="estado">
+                                <img *ngIf="puerta2" src="../../assets\PDespierta.png" (click)="cambiarEstadoP2()">
+                                <img *ngIf="!puerta2" src="../../assets\PDormida.png" (click)="cambiarEstadoP2()">
                             </td>
                         </tr>
                     </tbody>
@@ -69,6 +82,164 @@
             
         </div>
         
+
+        <section class="sec">
+            <!-----------------------------------TRES----------------------------------------------->
+            <div class="tres">
+                <div class="plano">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Planos del primer piso</h2>
+                    <table _ngcontent-mps-c21="" class="plano">
+                        <tr _ngcontent-mps-c21="">
+                        
+                            <td >
+                                <img *ngIf="foco1" src="../../assets\FE.png">
+                                <img *ngIf="!foco1" src="../../assets\FA.png">
+                            </td>
+                            <td _ngcontent-mps-c21="" class="c12"><img src="../../assets\12.png"></td>
+                            <td _ngcontent-mps-c21="" class="c13"><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21="" class="c14">
+                                <img *ngIf="!puerta2" src="../../assets\derecha.png">
+                                <img *ngIf="puerta2" src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21="" class="c15">
+                                <img *ngIf="!puerta2" src="../../assets\CIzq.png">
+                                <img *ngIf="puerta2" src="../../assets\solo.png">
+                            </td>
+                            <td _ngcontent-mps-c21="" class="c16"><img src="../../assets\solo.png"></td>
+                        </tr>
+                        <tr _ngcontent-mps-c21="">
+                            <td _ngcontent-mps-c21=""><img src="../../assets\abajo.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\abajo.png"></td>
+                            <td _ngcontent-mps-c21="">
+                                <img *ngIf="foco2" src="../../assets\Fabajo.png">
+                                <img *ngIf="!foco2" src="../../assets\FAabajo.png">
+                            </td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\12.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                        </tr>
+                        <tr _ngcontent-mps-c21="">
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\mesa.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21="">
+                                <img *ngIf="vent" src="../../assets\VE.png">
+                                <img *ngIf="!vent" src="../../assets\VA.png"></td>
+                        </tr>
+                        <tr _ngcontent-mps-c21="">
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\mesa.png"></td>
+                            <td _ngcontent-mps-c21="">
+                                <img *ngIf="foco3" src="../../assets\FE.png">
+                                <img *ngIf="!foco3" src="../../assets\FA.png">
+                            </td>
+                            <td _ngcontent-mps-c21=""><p _ngcontent-mps-c21="">
+                                <img *ngIf="foco3" src="../../assets\FE.png">
+                                <img *ngIf="!foco3" src="../../assets\FA.png"></p></td>
+                            <td _ngcontent-mps-c21=""><p _ngcontent-mps-c21="">
+                                <img *ngIf="foco3" src="../../assets\FE.png">
+                                <img *ngIf="!foco3" src="../../assets\FA.png"></p></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                        </tr>
+                        <tr _ngcontent-mps-c21="">
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21="">
+                                <img *ngIf="!puerta" src="../../assets\Cab.png">
+                                <img *ngIf="puerta" src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\mesa.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\solo.png"></td>
+                        </tr>
+                    </table>
+        
+                </div>
+            </div>
+
+
+            <!-----------------------------------cuatro----------------------------------------------->
+            <div class="cuatro">
+                <div class="plano">
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Planos del segundo piso</h2>
+                    <table _ngcontent-mps-c21="" class="plano">
+                        <tr _ngcontent-mps-c21="">
+                        
+                            <td >
+                                <img *ngIf="foco4" src="../../assets\FE.png">
+                                <img *ngIf="!foco4" src="../../assets\FA.png">
+                            </td>
+                            <td _ngcontent-mps-c21="" class="c12"><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21="" class="c13"><img src="../../assets\pisoMesa.png"></td>
+                            <td _ngcontent-mps-c21="" class="c14">
+                                <img *ngIf="foco4" src="../../assets\FE.png">
+                                <img *ngIf="!foco4" src="../../assets\FA.png">
+                            <td _ngcontent-mps-c21="" class="c15"><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21="" class="c16">
+                                <img *ngIf="foco4" src="../../assets\FE.png">
+                                <img *ngIf="!foco4" src="../../assets\FA.png">
+                            </td>
+                        </tr>
+                        <tr _ngcontent-mps-c21="">
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\pisoMesa.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\pisoMesa.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\pisoMesa.png"></td>
+                        </tr>
+                        <tr _ngcontent-mps-c21="">
+                            <td _ngcontent-mps-c21="">
+                                <img *ngIf="foco4" src="../../assets\FE.png">
+                                <img *ngIf="!foco4" src="../../assets\FA.png">
+                            </td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21="">
+                                <img *ngIf="foco4" src="../../assets\FE.png">
+                                <img *ngIf="!foco4" src="../../assets\FA.png">
+                            </td>
+                        </tr>
+                        <tr _ngcontent-mps-c21="">
+                            <td _ngcontent-mps-c21=""><img src="../../assets\pisoMesa.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\pisoMesa.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\pisoMesa.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                        </tr>
+                        <tr _ngcontent-mps-c21="">
+                            <td _ngcontent-mps-c21="">
+                                <img *ngIf="foco4" src="../../assets\FE.png">
+                                <img *ngIf="!foco4" src="../../assets\FA.png">
+                            </td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\pisoMesa.png"></td>
+                            <td _ngcontent-mps-c21="">
+                                <img *ngIf="foco4" src="../../assets\FE.png">
+                                <img *ngIf="!foco4" src="../../assets\FA.png">
+                            </td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\pisoMesa.png"></td>
+                            <td _ngcontent-mps-c21=""><img src="../../assets\piso.png"></td>
+                            <td _ngcontent-mps-c21="">
+                                <img *ngIf="foco4" src="../../assets\FE.png">
+                                <img *ngIf="!foco4" src="../../assets\FA.png">
+                            </td>
+                        </tr>
+                    </table>
+        
+                </div>
+            </div>
+        </section>
+
+
         <!-----------------------------------DOS----------------------------------------------->
 
         <div class="dos">
@@ -102,202 +273,8 @@
             </table>
 
         </div>
-        <!-----------------------------------TRES----------------------------------------------->
-        <div class="plano">
-            <br>
-            <br>
-            <br>
-            <h2>Planos del primer piso</h2>
-            <!-----1------->
-            <table class="plano">
-                <tr>
-                    <div class="c11">
-                        <td>
-                            <p>foco1</p>
-                        </td>
-                    </div>
-                    
+        
 
-
-
-                    <td class="c12">
-                        <p>jolakjfd</p>
-                    </td>
-
-
-
-                    <td class="c13">
-                        
-                    </td>
-
-
-
-                    <td class="c14">
-                        
-                    </td>
-
-
-
-                    <td class="c15">
-                        <p>puerta1</p>
-                    </td>
-
-
-
-                    <td class="c16">
-                        
-                    </td>
-                </tr>
-                <!-----2------->
-                <tr>
-                    <td>
-
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-
-
-
-                    <td>
-                        <p>foco2</p>
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-
-
-                    
-                    <td>
-                        
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-                </tr>
-                <!-----3------->
-                <tr>
-                    <td>
-
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-
-
-                    
-                    <td>
-                        
-                    </td>
-
-
-
-                    <td>
-                        <p>ventilador1</p>
-                    </td>
-                </tr>
-                <!-----4------->
-                <tr>
-                    <td>
-
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-
-
-
-                    <td>
-                        <p>foco3</p>
-                    </td>
-
-
-
-                    <td>
-                        <p>foco4</p>
-                    </td>
-
-
-                    
-                    <td>
-                        <p>foco5</p>
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-                </tr>
-                <!-----5------->
-                <tr>
-                    <td>
-
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-
-
-
-                    <td>
-                        <p>puerta2</p>
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-
-
-                    
-                    <td>
-                        
-                    </td>
-
-
-
-                    <td>
-                        
-                    </td>
-                </tr>
-
-
-            </table>
-
-
-        </div>
     </div>
 
 

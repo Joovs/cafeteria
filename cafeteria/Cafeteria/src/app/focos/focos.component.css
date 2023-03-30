@@ -8,6 +8,7 @@
 
 * {
 box-sizing: border-box;
+
 }
 
 body {
@@ -17,6 +18,10 @@ font-family: 'Montserrat', sans-serif;
 min-height: 100vh;
 display: flex;
 align-items: center;
+}
+
+.dos{
+    margin: 20px;
 }
 
 .contenedor {
@@ -59,7 +64,7 @@ background: linear-gradient(#e9b76d00, rgba(255, 192, 203, 0));
 }
 
 .estado img{
-    height: 200px;
+    height: 70px;
     width: auto;
     
 }
@@ -69,8 +74,9 @@ background: linear-gradient(#e9b76d00, rgba(255, 192, 203, 0));
 }
 .tabla{
     width: 80%;
-    margin-left: 12%;
 }
+
+
 
 .tabla td{
     text-align: center;
@@ -108,22 +114,27 @@ background: linear-gradient(#e9b76d00, rgba(255, 192, 203, 0));
 
 .plano table{
     border: 1px solid #000;
+    background-color: rgb(255, 199, 142);
 }
 .plano td{
-    border: 1px solid #000;
-    height: 200px;
-    width: 200px;
+    border: none;
+    height: 70px;
+    width: 70px;
+}
+.plano img{
+    height: 70px;
+    width: 70px;
 }
 
-.c11 td{
-    border-bottom: 10px solid #000;
-}
-.c12 {
-    border-bottom: 10px solid #000;
-    border-right: 10px solid #000;
-    
-}
-.c14{
-    border-right: 10px solid #000;
 
+.tres{
+    float: left;
+}
+
+.cuatro{
+    float: right;
+}
+
+.sec{
+    margin: 50px;
 }
