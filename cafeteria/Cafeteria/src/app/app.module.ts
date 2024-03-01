@@ -6,7 +6,7 @@ import { CargarScriptsService } from "./cargar-scripts.service";
 //fin servicio
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './Home/home.component';
 import { FocosComponent } from './focos/focos.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { LoginComponent } from './login/login.component';

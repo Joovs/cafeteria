@@ -34,6 +34,7 @@
 	margin-right: 20px;
 	width: 50%;
 	max-width: 550px;
+    margin-left: 70px;
 }
 
 .contenido-principal__contenedor {
@@ -50,3 +51,123 @@
 	line-height: 30px;
 	color: chocolate;
 }
+
+/*-----------------------------------------------------------------*/
+.titulo{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    }
+    
+    .JOVIS{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    .zoom_JOVIS{
+        transition: transform .2s;
+    }
+    
+    .zoom_JOVIS:hover{
+        transform: scale(1.5);
+    }
+    
+    
+    .CHARLY{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .zoom_CHARLY{
+        transition: transform .2s;
+    }
+    
+    .zoom_CHARLY:hover{
+        transform: scale(1.5);
+    }
+    
+    .JOHN{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .zoom_JOHN{
+        transition: transform .2s; 
+    }
+    
+    .zoom_JOHN:hover{
+        transform: scale(1.5);
+    }
+    
+    .social {
+        position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+        left: -39px; /* Establecemos la barra en la izquierda */
+        top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+        z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+    }
+    
+    .social ul {
+        list-style: none;
+    }
+
+    .social ul li a {
+        display: inline-block;
+        color:#fff;
+        background: #000;
+        padding: 10px 15px;
+        text-decoration: none;
+        -webkit-transition:all 500ms ease;
+        -o-transition:all 500ms ease;
+        transition:all 500ms ease; /* Establecemos una transición a todas las propiedades 
+        background-image: image("../../assets/fb.png");     */
+    }
+
+    .social ul li .icon-facebook {background:#3b5998;} 
+    .social ul li .icon-twitter {background: #4ecdff;}
+    .social ul li .icon-instagram {background: #D4218B;}
+    
+    .icon-facebook{
+        height: 30px;
+        width: 30px;
+    }
+    .icon-instagram{
+        height: 30px;
+        width: 30px;
+    }
+    .icon-twitter{
+        height: 30px;
+        width: 30px;
+    }
+
+    .social ul li a:hover {
+        background: chocolate; 
+        padding: 10px 30px; 
+    }
+
+    .facebook{
+        height: 30px;
+        width: 30px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    .tw{
+        height: 30px;
+        width: 30px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+    .ins{
+        height: 30px;
+        width: 30px;
+        margin-left: 0px;
+        margin-top: -10px;
+    }
+
+    .tabla tr {
+        align-content: center;
+        margin: 20px;
+    }
+
+    .elementos{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
