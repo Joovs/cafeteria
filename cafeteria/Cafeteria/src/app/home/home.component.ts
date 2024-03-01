@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { CargarScriptsService } from "./../cargar-scripts.service";
+import { CargarScriptsService } from "../cargar-scripts.service";
 
 @Component({
   selector: 'app-home',
